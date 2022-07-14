@@ -12,7 +12,7 @@ while True:
             print("Ви можете вказати свій вік лише числами")
         if isinstance(age, int) and age <= 0:
             print("Невірно вказан вік")
-        elif isinstance(age, int) and age > 111:
+        if isinstance(age, int) and age > 111:
             print("Невірно вказан вік")
         if age in range(1, 111, 1):
             break
@@ -32,7 +32,7 @@ elif age < 16:
 # - якщо користувачу більше 65 - вивести "Покажіть пенсійне посвідчення!"
 elif age >= 65:
     print("Покажіть пенсійне посвідчення!")
-
 # - у будь-якому іншому випадку - вивести "А білетів вже немає!"
+
 else:
     print("А білетів вже немає!")
